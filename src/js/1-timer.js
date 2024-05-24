@@ -45,8 +45,6 @@ const options = {
   },
 };
 
-// function compareDate(currentTime, choosenTime) {}
-
 flatpickr('#datetime-picker', options);
 
 function convertMs(ms) {
