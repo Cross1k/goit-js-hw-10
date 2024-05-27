@@ -8,9 +8,28 @@
     <title>Page 3</title>
   </head>
   <body>
+    <a href="./index.html">Go to home</a>
     <section>
-      <a href="./index.html">Go to home</a>
-      <form class="feedback-form" autocomplete="off"></form>
+      <form class="form">
+        <label>
+          Delay (ms)<br />
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
       <script src="./js/2-snackbar.js" type="module"></script>
     </section>
   </body>

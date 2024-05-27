@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 248px;
+}
+
+button[type='submit'] {
+  margin-top: 12px;
+  width: 100%;
+}
+input[type='number'] {
+  box-sizing: border-box;
+  width: 100%;
+}

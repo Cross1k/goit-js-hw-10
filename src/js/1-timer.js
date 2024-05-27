@@ -35,8 +35,6 @@ const options = {
   onClose(selectedDates) {
     userSelectedDate = selectedDates[0];
     timeNow = Date.now();
-    console.log(userSelectedDate.getTime());
-    console.log(Date.now());
     if (timeNow >= userSelectedDate.getTime()) {
       errorMessage();
     } else {
@@ -75,7 +73,6 @@ function minus() {
   hoursShown.innerHTML = `${convertMs(leastTime).hours}`.padStart(2, '0');
   minutesShown.innerHTML = `${convertMs(leastTime).minutes}`.padStart(2, '0');
   secondsShown.innerHTML = `${convertMs(leastTime).seconds}`.padStart(2, '0');
-  console.log(leastTime);
   if (leastTime < 1000) {
     clearInterval(intervalId);
     inputDate.removeAttribute('disabled', '');

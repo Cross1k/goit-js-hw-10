@@ -1,4 +1,4 @@
-button {
+button[data-start] {
   display: inline-block;
   padding: 8px 16px;
   color: #fff;
@@ -11,11 +11,11 @@ button {
   transition: background-color 400ms ease, color 400ms ease;
 }
 
-button:hover {
+button[data-start]:hover {
   background-color: #6c8cff;
 }
 
-button:disabled {
+button[data-start]:disabled {
   color: #989898;
   background-color: #cfcfcf;
   pointer-events: none;
